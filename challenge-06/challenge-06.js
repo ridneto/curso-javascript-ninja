@@ -6,6 +6,9 @@ e imprima o nome desse campeonato no console.
 */
 // ?
 
+var championship = "paulistão";
+console.log( championship );
+
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
 Os elementos serão nomes de times do campeonato escolhido, e os nomes devem
@@ -13,6 +16,8 @@ estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
 // ?
+
+var teams = ['Corinthians', 'Palmeiras', 'Santos', 'São Caetano', 'São Paulo'];
 
 console.log( 'Times que estão participando do campeonato:', teams );
 
@@ -34,17 +39,31 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
 */
 // ?
 
+function showTeamPosition(posicao){
+  return posicao > 0 && posicao < 6 ? 'O time que está em ' + posicao + 'º lugar é o ' + teams[posicao-1] : 'Não temos a informação do time que está nessa posição.';
+}
+
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
 // ?
 
+console.log(showTeamPosition(1));
+console.log(showTeamPosition(2));
+console.log(showTeamPosition(3));
+console.log(showTeamPosition(6));
+
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
 // ?
+
+var i = 20;
+while(i < 31){
+  console.log( i++ );
+}
 
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
@@ -60,7 +79,30 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
 */
 // ?
 
+function convertToHex(cor){
+  var hexa;
+
+  switch (cor) {
+    case "azul":
+        hexa = "001";
+      break;
+    case "vermelho":
+        hexa = "002";
+      break;
+    case "preto":
+      hexa = "003";
+      break;
+    default:
+      return "Nao temos o equivalente hexadecimal para " + cor;
+  }
+
+  return "O hexadecimal para a cor "+ cor + " é " + hexa;
+}
+
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
 // ?
+
+console.log( convertToHex("azul") );
+console.log( convertToHex("amarelo") );
