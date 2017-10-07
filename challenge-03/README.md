@@ -19,7 +19,7 @@ As propriedades e tipos de valores para cada propriedade desse objeto devem ser:
 var pessoa = {
   nome: 'Ridineu',
   sobrenome: 'Moraes',
-  sexo: 'Masculino',
+  sexo: 'M',
   idade: 20,
   altura: 1.8,
   peso: 90,
@@ -179,9 +179,9 @@ método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
 function apresentacao(){
-  var artigo = "a";
+  var artigo = "a ";
   if(pessoa.sexo == "M"){
-    var artigo = "o";
+    var artigo = "o ";
   }
 
   var ano = "ano";  
@@ -194,9 +194,9 @@ function apresentacao(){
     metros = metros + "s";
   }
 
-  return "Olá, eu sou "+ artigo +" "+ pessoa.nomeCompleto() +", tenho "+ pessoa.mostrarIdade() + ano + ", "+ pessoa.mostrarAltura() +", meu peso é "+ pessoa.mostrarPeso() + "e, só hoje, eu já caminhei "+ pessoa.caminhouQuantosMetros + metro +"!";
+  return "Olá, eu sou "+ artigo + pessoa.nomeCompleto() +", tenho "+ pessoa.mostrarIdade() + ano + ", "+ pessoa.mostrarAltura() +", meu peso é "+ pessoa.mostrarPeso() + "e, só hoje, eu já caminhei "+ pessoa.caminhouQuantosMetros + metro +"!";
 }
 
 // Agora, apresente-se ;)
 ?
-```
+apresentacao()
