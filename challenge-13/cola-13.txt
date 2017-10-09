@@ -1,0 +1,44 @@
+obj.toString(array)  -> cocatena separando com virgula sem espaço.
+arr.concat(algo) -> cocatena o arr com o parametro
+      nao altera o arr, apenas se mandar arr = arr.concat(outroarr);
+arr.unshift(obj) -> push, porém no index 0
+arr.shift() -> pop, porém no index 0
+
+arr.slice(p1, p2) -> retorna parte do array
+  p1 -> inicio index, p2 -> ate o ultimo index, mas n pegando
+  se for index negativo, pega a partir do final
+
+arr.splice -> igual o slice, só que remove os itens escolhidos
+  p1 -> inicio, p2 -> qnt de exclusão
+  a partir do terceiro parametro, ele coloca elemento no index inicio:
+    arr.splice(0, 0, 1); <= add '1' no index 0, sendo que removeu '0' elementos
+
+arr.forEach(function( item, index, arr){
+  item, index, arr  <- ja joga direto nos parametros;
+})
+
+SE UM ITEM FOR FALSO, JA RETORNA FALSE;
+var every = arr.every(function(item){
+  return item < 5;
+})
+
+SE UM ITEM FOR TRUE, JA RETORNA TRUE
+var some = arr.some(function(item){
+  return item % 2 === 0;
+})
+
+
+var map = array.map(function(item, index, array){
+    return ...;
+})
+
+var filter = arr.filter(function(item, index, aray){
+  return item > 2;  // retorna se o item for maior q 2;
+})
+
+//encadeando map com filtr
+var map = arr.map(function(item){
+  return item + 10;
+}).filter(function(item){
+  return item > 13;
+})
