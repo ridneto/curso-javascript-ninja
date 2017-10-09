@@ -1,0 +1,9 @@
+hasOwnProperty -> apenas não herdados!
+Object.keys(obj) -> Trazer as propriedades, saida em arry
+obj.isPrototypeOf(obj2) -> obj é 'pai' do objto parametro, mesmo n sendo direto
+
+JSON.stringify(obj) -> transforma o objeto no padrao json (tudo vira string)
+JSON.parse(obj) -> formato json para objeto
+
+arr.join(param) -> juntar tudo do array em uma string, parametro separados.
+            por padrão é a virgula sem espaço.
