@@ -1,0 +1,15 @@
+//nao retorna um array, mas sim um número/valor. (transformar tudo em um unico valor)
+var reduce = arr.reduce(function(acumulado, atual, index, array){
+  return acumulado + atual;
+}, 0 <- valor de inicio);
+
+reduceRight     <- começa do final
+
+array[1, 2, 3, 4];
+arr.indexOf( 3 ) );  <- retora o index do elemento passado, se nao existir = -1
+
+retorna 2.
+
+arr.indexOf(3, 1) <-segundo parametro: index de incio;
+
+arr.lastIndexOf(1, 2) <- param 2, começa no index 2 e vai <<
