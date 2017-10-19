@@ -59,7 +59,7 @@
 
   console.log('Primeira Pessoa: ' + ridineu);
   console.log('Segunda Pessoa: ' + beatriz);
-  console.log('Terceira Pessoa': + luana);
+  console.log('Terceira Pessoa: ' + luana);
 
   // ?
 
